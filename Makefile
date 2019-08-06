@@ -115,7 +115,7 @@ start-tileserver:
 	@echo "* "
 	@echo "***********************************************************"
 	@echo " "
-	docker run -it --rm --name tileserver-gl -v $$(pwd)/data:/data -p 8080:80 klokantech/tileserver-gl
+	winpty docker run -it --rm --name tileserver-gl -v "C:\work\osm\git\backup\data":/data -p 8080:80 klokantech/tileserver-gl --verbose
 
 start-postserve:
 	@echo " "
